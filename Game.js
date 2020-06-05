@@ -216,6 +216,51 @@ BuildRocks.Game = function (game) {
     this.goUp; //Move game up
     this.gameOver; //End Game
 
+}
+
+var totalRocks = 0 ;
+
+var rock = {
+    id:     this.id,
+    width:  this.width,
+    height: this.height    
+
+}
+
+buildingRocks: function () {
+
+    this.moveRock
+    this.updateBlock
+    this.updateRock
+    this.goUp
+
+}
+
+moveRock :function (rock) {
+
+    bposition = Math.floor((this.world.width, updateBlock));
+    bdelay = this.rnd.integerInRange(2000, 6000);
+    if (bposition < b.x) {
+        b.scale.x = 1;
+    } else {
+        b.scale.x = -1;
+    }
+    t = this.add.tween(b).to({ x: bposition }, 3500, Phaser.Easing.Quadratic.InOut, true, bdelay);
+    t.onStart.add(this.rock , this);
+    t.onComplete.add(this.gameOver , this);
     
 }
 
+updateBlock: function(rock) {
+   
+   
+    let height = 0; 
+    let width   ;
+
+    height += rock.height
+    width += rock.width 
+    
+    this.moveRock
+
+    
+}
