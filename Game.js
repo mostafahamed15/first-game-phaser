@@ -255,12 +255,30 @@ updateBlock: function(rock) {
    
    
     let height = 0; 
-    let width   ;
+    let width ;
 
-    height += rock.height
-    width += rock.width 
-    
+    height += rock.height;   
+    width += rock.width;  
+
+     create()
     this.moveRock
 
     
+}
+
+function create() {
+
+    //  This creates a simple sprite that is using our loaded image and
+    //  displays it on-screen and assign it to a variable
+    var rock = game.add.sprite(game.world.centerX, game.world.centerY, 'einstein');
+
+    //  Moves the image anchor to the middle, so it centers inside the game properly
+    rock.anchor.set(0.5);
+
+    //  Enables all kind of input actions on this image (click, etc)
+    rock.inputEnabled = true;
+
+ 
+    rock.events.onInputDown.add(listener, this);
+
 }
