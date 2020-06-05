@@ -201,3 +201,21 @@ BunnyDefender.Game.prototype = {
     
     
 };
+//Game Structure
+//Build Rocks game
+//initGame(
+    //Initial All functions
+//)
+BuildRocks.Game = function (game) {
+    this.totalRocks; //Counter
+    this.rock; //Single rock
+    this.buildingRocks //Init game
+    this.moveRock; //To move Rock from left to right
+    this.updateBlock; // After Click decreasing Block area
+    this.updateRock;  // After Decreasing Block area Decreaser rock area
+    this.goUp; //Move game up
+    this.gameOver; //End Game
+
+    
+}
+
