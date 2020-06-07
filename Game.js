@@ -260,8 +260,9 @@ function updateBlock(rock) {
     height += rock.height;   
     width += rock.width;  
 
-     create()
-    this.moveRock
+     this.create();
+     this.goUp();
+    this.moveRock();
 
     
 }
@@ -281,4 +282,15 @@ function create() {
  
     rock.events.onInputDown.add(listener, this);
 
+}
+
+function goup(height) {
+    bposition = Math.floor((this.world.width, height));
+    bdelay = this.rnd.integerInRange(2000, 6000);
+    if (bposition < b.x) {
+        b.scale.x = 1;
+    } else {
+        b.scale.x = -1;
+    }
+    t = this.add.tween(b).to({ x: bposition }, 3500, Phaser.Easing.Quadratic.InOut, true, bdelay);
 }
