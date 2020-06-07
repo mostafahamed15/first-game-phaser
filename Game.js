@@ -225,9 +225,9 @@ var rock = {
     width:  this.width,
     height: this.height    
 
-}
+};
 
-buildingRocks: function () {
+ function buildingRocks () {
 
     this.moveRock
     this.updateBlock
@@ -236,7 +236,7 @@ buildingRocks: function () {
 
 }
 
-moveRock :function (rock) {
+ function moveRock(rock) {
 
     bposition = Math.floor((this.world.width, updateBlock));
     bdelay = this.rnd.integerInRange(2000, 6000);
@@ -251,7 +251,7 @@ moveRock :function (rock) {
     
 }
 
-updateBlock: function(rock) {
+function updateBlock(rock) {
    
    
     let height = 0; 
