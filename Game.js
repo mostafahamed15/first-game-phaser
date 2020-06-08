@@ -1,19 +1,19 @@
-BunnyDefender.Game = function(game) {
-    this.totalBunnies;
-    this.bunnyGroup;
-    this.totalSpacerocks;
-    this.spacerockgroup;
-    this.burst;
-    this.gameover;
-    this.countdown;
-    this.overmessage;
-    this.secondsElapsed;
-    this.timer;
-    this.music;
-    this.ouch;
-    this.boom;
-    this.ding;
-};
+// BunnyDefender.Game = function(game) {
+//     this.totalBunnies;
+//     this.bunnyGroup;
+//     this.totalSpacerocks;
+//     this.spacerockgroup;
+//     this.burst;
+//     this.gameover;
+//     this.countdown;
+//     this.overmessage;
+//     this.secondsElapsed;
+//     this.timer;
+//     this.music;
+//     this.ouch;
+//     this.boom;
+//     this.ding;
+// };
 
 BunnyDefender.Game.prototype = {
     
